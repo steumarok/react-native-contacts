@@ -264,7 +264,7 @@ public class ContactsProvider {
                         int month = Integer.parseInt(yearMonthDayList.get(0));
                         int day = Integer.parseInt(yearMonthDayList.get(1));
                         contact.birthday = new Contact.Birthday(new Date(0).getYear(), month, day);
-                    } else {
+                    } else if (yearMonthDayList.size() > 2) {
                         int year = Integer.parseInt(yearMonthDayList.get(0));
                         int month = Integer.parseInt(yearMonthDayList.get(1));
                         int day = Integer.parseInt(yearMonthDayList.get(2));
